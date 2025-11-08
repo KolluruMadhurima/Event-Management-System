@@ -16,7 +16,7 @@ spec:
         - name: mysql
           image: {{ .Values.mysql.image }}
           env:
-            - name: MYSQL_ROOT_PASSWORD
+            - name: ROOT
               value: {{ .Values.mysql.rootPassword }}
             - name: MYSQL_DATABASE
               value: {{ .Values.mysql.database }}
